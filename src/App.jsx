@@ -1,5 +1,13 @@
+import FAQ from "./sections/FAQ";
+import ReasonsSection from "./sections/ReasonsSection";
+
 function App() {
-  return <h1 className="text-3xl font-bold">Hello</h1>;
+  return (
+    <>
+      <ReasonsSection />
+      <FAQ />
+    </>
+  );
 }
 
 export default App;
