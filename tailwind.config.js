@@ -4,9 +4,6 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      // listStyleImage: {
-      // 	checkmark: 'url('./assets/checkmark.svg')'
-      // },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
