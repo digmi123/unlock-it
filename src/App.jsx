@@ -1,4 +1,5 @@
 import FAQ from "./sections/FAQ";
+// import Help from "./sections/Help";
 import ReasonsSection from "./sections/ReasonsSection";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <ReasonsSection />
       <FAQ />
+      {/* <Help /> */}
     </>
   );
 }
