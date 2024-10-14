@@ -4,7 +4,7 @@ export default function ContactForm() {
   const formRef = useRef(null);
 
   return (
-    <div className="p-6 bg-primary rounded-md flex flex-col justify-between">
+    <div className="p-6 bg-primary rounded-md flex flex-col gap-10">
       <h2 className="text-4xl text-center font-bold">
         Contact Us for a Free Service Estimate
       </h2>
@@ -31,11 +31,12 @@ export default function ContactForm() {
           name="message"
           className="px-4 py-3 border-input rounded-md"
           placeholder="Message*"
+          rows="5"
         />
         <button
           type="submit"
           value="Send"
-          className="bg-white px-4 py-3 rounded-full text-primary font-bold uppercase"
+          className="bg-white px-4 py-3 rounded-full text-primary font-bold uppercase my-8"
         >
           Send
         </button>
