@@ -1,21 +1,21 @@
 import PropTypes from "prop-types";
 import ContactForm from "@/components/ContactForm";
-import { cn } from "@/lib/utils";
+import SectionWrapper from "@/components/SectionWrapper";
 
 export default function ContactLayout({ children, backgroundImage }) {
   return (
-    <section
-      className={cn(
-        "px-52 py-12 grid grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))] gap-6",
-        {
-          "bg-[url('/src/assets/doorLock.jpg')] bg-no-repeat bg-cover bg-left":
-            backgroundImage,
-        }
-      )}
+    <SectionWrapper
+      className="grid grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))] gap-6"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        "background-repeat": "no-repeat",
+        "background-size": "cover",
+        "background-position": "right",
+      }}
     >
       {children}
       <ContactForm />
-    </section>
+    </SectionWrapper>
   );
 }
 
