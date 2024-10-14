@@ -1,3 +1,4 @@
+import SectionWrapper from "@/components/SectionWrapper";
 import {
   Accordion,
   AccordionContent,
@@ -70,8 +71,8 @@ const questionsAnswers = [
 
 export default function FAQ() {
   return (
-    <section className="px-52 py-12 bg-primary">
-      <h1 className="text-4xl uppercase font-bold text-center">
+    <SectionWrapper className="bg-primary">
+      <h1 className="text-4xl uppercase font-bold text-center py-4">
         locksmith common questions
       </h1>
 
@@ -85,6 +86,6 @@ export default function FAQ() {
           ))}
         </Accordion>
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
