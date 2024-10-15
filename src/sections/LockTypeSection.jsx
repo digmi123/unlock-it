@@ -1,5 +1,4 @@
 import LockTypeCard from "@/components/LockTypeCard";
-import SectionWrapper from "@/components/SectionWrapper";
 
 export default function LockTypeSection() {
   return (
