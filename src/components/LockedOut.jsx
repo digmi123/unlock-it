@@ -1,5 +1,6 @@
 import checkmark from "../assets/checkmark.svg";
 import PropTypes from "prop-types";
+import { Button } from "./ui/button";
 
 const reasons = [
   "we arrive in 15 minutes",
@@ -39,7 +40,9 @@ Card.propTypes = {
 export default function LockedOut() {
   return (
     <div className="flex flex-col gap-8">
-      <h1 className="text-8xl font-bold p-2">locked out? we&apos;ve got you</h1>
+      <h1 className="text-titleClamp font-bold p-2">
+        locked out? we&apos;ve got you
+      </h1>
       <ul className="flex flex-col gap-2">
         {reasons.map((reason) => (
           <li key={reason} className="flex items-center gap-4">
@@ -51,9 +54,11 @@ export default function LockedOut() {
         ))}
       </ul>
 
-      <button className="w-fit bg-primary py-4 px-12 text-3xl rounded-full">
-        Call Now: (03) 6358 2037
-      </button>
+      <a href="tel:03 6358 2037">
+        <Button className="w-fit bg-primary py-8 px-12 text-3xl sm:text-xl rounded-full">
+          Call Now: (03) 6358 2037
+        </Button>
+      </a>
 
       <div className="flex gap-4">
         {cardsContent.map(({ topic, description }) => (

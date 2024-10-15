@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Button } from "./ui/button";
 
 export default function ContactForm() {
   const formRef = useRef(null);
@@ -42,12 +43,14 @@ export default function ContactForm() {
         </button>
       </form>
 
-      <div className="flex flex-col items-center gap-2">
-        <p className="text-2xl">
-          Or call us at: <span className="font-bold">(03) 6358 2037</span>
-        </p>
-        <p>(23,447 Clients)</p>
-      </div>
+      <Button variant="default">
+        <div className="flex flex-col items-center gap-2">
+          <p className="text-2xl">
+            Or call us at: <span className="font-bold">(03) 6358 2037</span>
+          </p>
+          <p>(23,447 Clients)</p>
+        </div>
+      </Button>
     </div>
   );
 }
