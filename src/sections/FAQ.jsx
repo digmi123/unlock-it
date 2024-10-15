@@ -71,7 +71,7 @@ const questionsAnswers = [
 
 export default function FAQ() {
   return (
-    <SectionWrapper className="bg-primary">
+    <SectionWrapper className="bg-primary" id="faq-section">
       <h1 className="text-4xl uppercase font-bold text-center py-4">
         locksmith common questions
       </h1>
