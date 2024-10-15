@@ -6,7 +6,7 @@ export default function SectionWrapper({ children, className, style, id }) {
     <section
       id={id}
       className={cn(
-        "w-full min-h-[90vh] px-52 py-12 overflow-hidden",
+        "w-full min-h-[90vh] px-32 py-12 sm:px-8 sm:py-8",
         className
       )}
       style={style}
