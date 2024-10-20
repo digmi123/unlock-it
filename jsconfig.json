@@ -1,8 +1,9 @@
 {
-    "compilerOptions": {
+  "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@lockSmith/common/components/*": ["./src/main/common/components"]
     }
   }
 }

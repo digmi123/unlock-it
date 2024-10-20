@@ -1,27 +1,7 @@
-import checkmark from "../assets/checkmark.svg";
+import checkmark from "../../assets/checkmark.svg";
 import PropTypes from "prop-types";
-import { Button } from "./ui/button";
-
-const reasons = [
-  "we arrive in 15 minutes",
-  "we can handle any lock",
-  "cheapest rate in Melbourne",
-];
-
-const cardsContent = [
-  {
-    topic: "24/7",
-    description: "always available",
-  },
-  {
-    topic: "15 Min",
-    description: "fastest arrival",
-  },
-  {
-    topic: "$29",
-    description: "Callout Fee",
-  },
-];
+import { CallUsButton } from "@/main/common";
+import { reasons, cardsContent } from "./consts";
 
 const Card = ({ topic, description }) => {
   return (
@@ -54,11 +34,7 @@ export default function LockedOut() {
         ))}
       </ul>
 
-      <a href="tel:03 6358 2037">
-        <Button className="w-fit bg-primary py-8 px-12 text-3xl sm:text-xl rounded-full">
-          Call Now: (03) 6358 2037
-        </Button>
-      </a>
+      <CallUsButton isDisplayText />
 
       <div className="flex gap-4">
         {cardsContent.map(({ topic, description }) => (

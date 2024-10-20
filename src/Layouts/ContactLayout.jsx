@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/form/ContactForm";
 import SectionWrapper from "@/components/SectionWrapper";
 
 export default function ContactLayout({ children, backgroundImage, id }) {
