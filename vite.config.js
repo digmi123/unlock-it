@@ -8,6 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      "@lockSmith/common/components": path.resolve(__dirname, "./src/main/common/components"),
     },
   },
 });
