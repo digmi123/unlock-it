@@ -20,7 +20,9 @@ Card.propTypes = {
 export default function LockedOut() {
   return (
     <div className="flex flex-col gap-8">
-      <h1 className="text-8xl font-bold p-2">locked out? we&apos;ve got you</h1>
+      <h1 className="text-titleClamp font-bold p-2">
+        locked out? we&apos;ve got you
+      </h1>
       <ul className="flex flex-col gap-2">
         {reasons.map((reason) => (
           <li key={reason} className="flex items-center gap-4">

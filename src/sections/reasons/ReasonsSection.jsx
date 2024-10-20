@@ -3,7 +3,7 @@ import LockedOut from "../../components/locked-out/LockedOut";
 
 function ReasonsSection() {
   return (
-    <ContactLayout>
+    <ContactLayout id="reasons-section">
       <LockedOut />
     </ContactLayout>
   );

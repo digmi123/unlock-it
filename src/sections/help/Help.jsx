@@ -4,7 +4,7 @@ import door_lock from "@/assets/doorLock.jpg";
 
 function Help() {
   return (
-    <ContactLayout backgroundImage={door_lock}>
+    <ContactLayout backgroundImage={door_lock} id="help-section">
       <WeCanHelp />
     </ContactLayout>
   );
