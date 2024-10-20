@@ -1,15 +1,7 @@
-import FAQ from "./sections/FAQ";
-import Help from "./sections/Help";
-import ReasonsSection from "./sections/ReasonsSection";
+import MainContainer from "./main/MainContainer";
 
 function App() {
-  return (
-    <>
-      <ReasonsSection />
-      <FAQ />
-      <Help />
-    </>
-  );
+  return <MainContainer />;
 }
 
 export default App;

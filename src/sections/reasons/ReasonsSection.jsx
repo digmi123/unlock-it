@@ -1,10 +1,12 @@
 import ContactLayout from "@/Layouts/ContactLayout";
-import LockedOut from "../components/LockedOut";
+import LockedOut from "../../components/locked-out/LockedOut";
 
-export default function ReasonsSection() {
+function ReasonsSection() {
   return (
     <ContactLayout>
       <LockedOut />
     </ContactLayout>
   );
 }
+
+export default ReasonsSection;
