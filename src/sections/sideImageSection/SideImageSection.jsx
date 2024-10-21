@@ -4,7 +4,7 @@ import door_lock from "@/assets/doorLock.jpg";
 
 export default function SideImageSection() {
   return (
-    <div className="flex flex-col gap-8 p-10">
+    <div className="grid grid-cols-[repeat(2,_minmax(0,_1fr))] gap-8 p-10">
       <SideImage image={door_lock}>
         <div className="flex flex-col items-center gap-4 w-2/4">
           <h1 className="text-titleClamp font-bold text-center text-primary">

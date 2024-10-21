@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import LockTypeSection from "./LockTypeSection";
+import LockTypeSection from "@/sections/lockType/LockTypeSection";
 export default function UnlockSection() {
   return (
     <div id="unlock-section">
