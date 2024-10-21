@@ -1,4 +1,3 @@
-import React from "react";
 import { Input } from "../ui/input";
 import { CheckCircleIcon, ExclamationCircleIcon } from "@heroicons/react/solid";
 import useFormInput from "./hook/useFormInput";
@@ -67,7 +66,9 @@ const FormInput = ({
       )}
 
       {touched && isValid === false && (
-        <span className="text-red-500 text-base mt-1 font-bold">{errorMessage}</span>
+        <span className="text-red-500 text-base mt-1 font-bold">
+          {errorMessage}
+        </span>
       )}
     </div>
   );

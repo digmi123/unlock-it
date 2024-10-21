@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import React from "react";
 import { PHONE_NUMBER } from "./consts";
 
 const CallUsButton = ({ isDisplayText = false }) => {
