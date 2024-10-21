@@ -11,7 +11,9 @@ function ContactForm() {
   const [message, setMessage] = useState("");
   return (
     <div className="p-6 bg-primary rounded-md flex flex-col gap-10">
-      <h2 className="text-4xl text-center font-bold">Contact Us for a Free Service Estimate</h2>
+      <h2 className="text-4xl text-center font-bold">
+        Contact Us for a Free Service Estimate
+      </h2>
       <form ref={formRef} className="flex flex-col gap-4">
         <FormInput
           type="text"
@@ -59,7 +61,7 @@ function ContactForm() {
       </form>
 
       <div className="flex flex-col items-center gap-2">
-        <div className="grid grid-cols-[minmax(50px,150px)_minmax(50px,200px)]	items-center ">
+        <div className="grid grid-cols-[minmax(50px,150px)_minmax(50px,200px)] items-center">
           <p className="text-2xl">Or call us at:</p>
           <CallUsButton />
         </div>
