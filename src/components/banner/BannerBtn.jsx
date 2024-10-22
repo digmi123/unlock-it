@@ -1,6 +1,5 @@
 import React from "react";
-import BtnCard from "../bannerBtn/BtnCard";
-import FirstBanner from "../BannerItem/FirstBanner";
+import FirstBanner from "../BannerCard/BanfitCard";
 
 
 

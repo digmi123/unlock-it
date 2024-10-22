@@ -1,12 +1,8 @@
 import React from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-
+import {mapContainerStyle} from './const'
 const ServiceArea = ({ locations, mapCenter, zoom }) => {
-    const mapContainerStyle = {
-        height: "400px",
-        width: "100%",
-        
-    };
+  
 
     return (
         <div className="service-area flex flex-col items-center ">

@@ -1,21 +1,15 @@
-import PropTypes from "prop-types";
-import { cn } from "@/lib/utils";
+import PropTypes from 'prop-types';
 
-export default function BannerLayout({ children }) {
-
+const BannerLayout = ({ children }) => {
   return (
-    <section
-      className={cn(
-        ` px-0 py-12 grid grid-cols-[repeat(auto-fit,_minmax(20px,_1fr))] gap-6`,
-      
-      )}
-    >
+    <section className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap- p-0 bg-dark-blue">
       {children}
     </section>
   );
-}
+};
 
 BannerLayout.propTypes = {
-  children: PropTypes.node,
-  backgroundImage: PropTypes.string,
+  children: PropTypes.node.isRequired,
 };
+
+export default BannerLayout;
