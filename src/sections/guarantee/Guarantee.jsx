@@ -1,13 +1,7 @@
-import GuaranteeBanner from '@/components/guaranteeBanner/GuaranteeBanner'
-import GuaranteeLayout from '@/Layouts/GuaranteeLayout'
-import React from 'react'
+import GuaranteeBanner from "@/components/guaranteeBanner/GuaranteeBanner";
 
 function guarantee() {
-  return (
-    <GuaranteeLayout>
-        <GuaranteeBanner/>
-    </GuaranteeLayout>
-  )
+  return <GuaranteeBanner />;
 }
 
-export default guarantee
+export default guarantee;
