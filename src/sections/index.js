@@ -7,6 +7,6 @@ export * from "./unlock";
 export * from "./lockType";
 export * from "./whyUs";
 
-export * from "./ServiceBan";
-export * from "./benefitsBan";
+export * from "./serviceIncludes";
+export * from "./servicePromises";
 export * from "./service";
