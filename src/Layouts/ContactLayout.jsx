@@ -8,9 +8,9 @@ export default function ContactLayout({ children, backgroundImage, id }) {
       className="grid grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))] gap-6"
       style={{
         backgroundImage: `url(${backgroundImage})`,
-        "background-repeat": "no-repeat",
-        "background-size": "cover",
-        "background-position": "right",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "right",
       }}
       id={id}
     >
