@@ -19,6 +19,6 @@ export default function SectionWrapper({ children, className, style, id }) {
 SectionWrapper.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
-  style: PropTypes.string,
+  style: PropTypes.object,
   id: PropTypes.string,
 };
