@@ -3,8 +3,8 @@ import {
   FAQ,
   Help,
   Pricing,
-  ServiceBan,
-  BenefitBan,
+  ServiceIncludes,
+  ServicePromises,
   Service,
 } from "@/sections";
 import { UnlockSection } from "@/sections";
@@ -16,16 +16,16 @@ const MainContainer = () => {
     <>
       {/* <SideImageSection /> */}
       <UnlockSection />
-      <ServiceBan />
+      <ServiceIncludes />
       <Carousela />
-      <WhyUs />
-      <BenefitBan />
       <Reasons />
-      <FAQ />
+      <ServicePromises />
       <Guarantee />
+      <WhyUs />
       <Help />
-      <Service />
-      <Pricing />
+      <FAQ />
+      {/* <Service /> */}
+      {/* <Pricing /> */}
     </>
   );
 };
