@@ -13,7 +13,6 @@ import { useRef } from "react";
 import CarouselCon from "../carouselContent/CarouselCon";
 export function CarouselPlugin({ dataCustom }) {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
-  // Helper function to render stars based on the rating
 
   return (
     <div className="w-full">
@@ -23,7 +22,7 @@ export function CarouselPlugin({ dataCustom }) {
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
-       <CarouselCon dataCustom={dataCustom} />
+        <CarouselCon dataCustom={dataCustom} />
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>

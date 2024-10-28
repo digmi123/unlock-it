@@ -2,7 +2,7 @@ import { CarouselPlugin } from "./Carousel";
 import { customerData } from "./const";
 import { CallUsButton } from "@/main/common";
 // Sample data
-
+import Carousel from "./Carosuel2";
 const CarouselCard = () => {
   return (
     <div className="w-full flex flex-col items-center mb-20">
@@ -11,7 +11,7 @@ const CarouselCard = () => {
       </h2>
 
       <div className="w-full">
-        <CarouselPlugin dataCustom={customerData} />
+        <Carousel dataCustom={customerData} />
       </div>
       <div className="flex flex-col items-center justify-center text-center">
         <h3 className="text-center text-4xl font-bold mb-8 mt-8">
