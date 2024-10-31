@@ -1,13 +1,13 @@
+// Carousel.js
 import React from "react";
 import Slider from "react-slick";
-import { customerData } from "./const";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import CarouselCard from "./CarouselCard2";
 import { NextArrow } from "./NextArrow";
 import { PrevArrow } from "./PrevArrow";
-const Carousel = () => {
-  const settings = {
+
+const Carousel = ({ data, CardComponent, settingsOverrides }) => {
+  const defaultSettings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -29,18 +29,14 @@ const Carousel = () => {
     ],
   };
 
+  const settings = { ...defaultSettings, ...settingsOverrides };
+
   return (
-    <div className="max-w-7xl mx-auto p-4 relative  ">
+    <div className="max-w-7xl mx-auto p-4 relative">
       <Slider {...settings}>
-        {customerData.map((customer) => (
-          <div key={customer.id} className="p-4 flex gap-4">
-            <CarouselCard
-              name={customer.name}
-              date={customer.date}
-              feedback={customer.feedback}
-              image={customer.image}
-              rating={customer.rating}
-            />
+        {data.map((item) => (
+          <div key={item.id} className="p-4">
+            <CardComponent {...item} />
           </div>
         ))}
       </Slider>

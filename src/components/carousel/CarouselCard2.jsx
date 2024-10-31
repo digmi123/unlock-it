@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button"; // ShadCN button
 
-const CarouselCard = ({ name, date, feedback, image, rating }) => {
+const CarouselReviewersCard = ({ name, date, feedback, image, rating }) => {
   return (
     <div className="bg-white shadow-lg rounded-lg overflow-hidden max-h-[500px] h-[500px] ">
       <img src={image} alt={name} className="w-full h-40 object-cover" />
@@ -22,4 +22,4 @@ const CarouselCard = ({ name, date, feedback, image, rating }) => {
   );
 };
 
-export default CarouselCard;
+export default CarouselReviewersCard;

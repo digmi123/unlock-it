@@ -11,7 +11,7 @@ function GuaranteeBanner() {
         />
       </div>
 
-      <div className="text-primary w-1/2 text-start md:text-left p-6">
+      <div className="text-primary w-1/2 md:w-full text-start md:text-center p-6">
         <p className="text-2xl font-semibold pb-6">Our Guarantee</p>
         <h2 className="text-5xl font-bold pb-6">
           Top Quality Service & Cheapest Rate

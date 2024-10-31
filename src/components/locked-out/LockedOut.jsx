@@ -5,9 +5,9 @@ import { reasons, cardsContent } from "./consts";
 
 const Card = ({ topic, description }) => {
   return (
-    <div className="bg-primary rounded-2xl p-4 w-40 flex flex-col items-center">
-      <p className="text-4xl font-bold text-foreground">{topic}</p>
-      <p className="">{description}</p>
+    <div className="bg-primary rounded-2xl p-4 w-full flex flex-col items-center text-center gap-2">
+      <p className="text-4xl md:text-2xl font-bold text-foreground">{topic}</p>
+      <p className="font-bold text-xl text-foreground">{description}</p>
     </div>
   );
 };
@@ -20,9 +20,8 @@ Card.propTypes = {
 export default function LockedOut() {
   return (
     <div className="flex flex-col gap-8">
-      <h1 className="text-titleClamp font-bold p-2">
-        locked out? we&apos;ve got you
-      </h1>
+      <h1 className="text-titleClamp font-bold p-2">Locked out? We&apos;ve got you</h1>
+
       <ul className="flex flex-col gap-2">
         {reasons.map((reason) => (
           <li key={reason} className="flex items-center gap-4">
@@ -36,7 +35,7 @@ export default function LockedOut() {
 
       <CallUsButton isDisplayText />
 
-      <div className="flex gap-4">
+      <div className="grid grid-cols-3 md:grid-cols-1 gap-4">
         {cardsContent.map(({ topic, description }) => (
           <Card key={topic} topic={topic} description={description} />
         ))}
