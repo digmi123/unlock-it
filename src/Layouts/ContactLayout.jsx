@@ -5,7 +5,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 export default function ContactLayout({ children, backgroundImage, id }) {
   return (
     <SectionWrapper
-      className="grid grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))] gap-6"
+      className="grid grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))] gap-6 md:flex md:flex-col "
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundRepeat: "no-repeat",

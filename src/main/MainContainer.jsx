@@ -1,12 +1,4 @@
-import {
-  Reasons,
-  FAQ,
-  Help,
-  Pricing,
-  ServiceIncludes,
-  ServicePromises,
-  Service,
-} from "@/sections";
+import { Reasons, FAQ, Help, Pricing, ServiceIncludes, ServicePromises, Service } from "@/sections";
 import { UnlockSection } from "@/sections";
 import { WhyUs } from "@/sections";
 import Carousela from "@/sections/carousela/Carousela";
@@ -25,7 +17,7 @@ const MainContainer = () => {
       <Help />
       <FAQ />
       {/* <Service /> */}
-      {/* <Pricing /> */}
+      <Pricing />
     </>
   );
 };
