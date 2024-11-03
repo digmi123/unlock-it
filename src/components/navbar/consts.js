@@ -1,7 +1,7 @@
 export const navbarItems = [
-  { label: "Products", link: "#" },
-  { label: "Goals", link: "#" },
-  { label: "David", link: "#" },
-  { label: "e", link: "#" },
-  { label: "Images", link: "#" },
+  { label: "Services", link: "#" },
+  { label: "Reviews", link: "#" },
+  { label: "Contact Us", link: "#" },
+  { label: "Details", link: "#" },
+  { label: "FAQ", link: "#" },
 ];
