@@ -6,7 +6,7 @@ export default function ServiceIncludesCard({ description, icon }) {
     <BannerCard className="min-w-80">
       <div className="flex items-center gap-4">
         {icon}
-        <h3 className="text-2xl font-extrabold text-white">{description}</h3>
+        <h3 className="text-lg font-extrabold text-white">{description}</h3>
       </div>
     </BannerCard>
   );

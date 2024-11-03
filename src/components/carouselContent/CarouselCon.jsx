@@ -10,13 +10,13 @@ import { renderStars } from "./const";
 
 function CarouselCon({dataCustom}) {
   return (
-    <CarouselContent className="flex space-x-4">
+    <CarouselContent className=" ">
     {" "}
     {/* Adjust space between cards */}
     {dataCustom.map((item) => (
       <CarouselItem
         key={item.id}
-        className=" sm:w-[50%] md:w-[33.33%] lg:w-[25%] xl:w-[20%] p-2"
+        className="w-full xs-only:w-[100%] sm:w-[50%] md:w-[33.33%] lg:w-[40%] xl:w-[45%] 2xl:w-[30%] 3xl:w-[25%] 4xl:w-[20%] lg-only:w-[45%] p-2"
       >
         <div className="p-1">
           <Card className="flex flex-col h-full h-90">
