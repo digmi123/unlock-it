@@ -10,3 +10,4 @@ export * from "./whyUs";
 export * from "./serviceIncludes";
 export * from "./servicePromises";
 export * from "./service";
+export * from "./footer";
