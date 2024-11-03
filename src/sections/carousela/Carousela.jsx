@@ -1,13 +1,12 @@
-import CarouselCard from '@/components/carousel/CarouselCard'
-import CarouselLayout from '@/Layouts/CarouselLayout'
-import React from 'react'
+import CarouselWrapper from "@/components/carousel/CarouselWrapper";
+import CarouselLayout from "@/Layouts/CarouselLayout";
 
 function Carousela() {
   return (
     <CarouselLayout>
-        <CarouselCard/>
+      <CarouselWrapper />
     </CarouselLayout>
-  )
+  );
 }
 
-export default Carousela
+export default Carousela;
