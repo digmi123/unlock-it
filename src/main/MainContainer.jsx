@@ -9,24 +9,21 @@ import {
 } from "@/sections";
 import { UnlockSection } from "@/sections";
 import { WhyUs } from "@/sections";
-import Carousela from "@/sections/carousela/Carousela";
+import { Carousel } from "@/sections/Carousel";
+import { Footer } from "@/sections/footer";
 import { Guarantee } from "@/sections/guarantee/garantee";
 const MainContainer = () => {
   return (
-    <>
-      {/* <SideImageSection /> */}
-      <UnlockSection />
-      <ServiceIncludes />
-      <Carousela />
-      <Reasons />
-      <ServicePromises />
-      <Guarantee />
-      <WhyUs />
-      <Help />
-      <FAQ />
-      {/* <Service /> */}
-      {/* <Pricing /> */}
-    </>
+    <div className="mt-[100px]"> {/* Adjust this value based on your navbar's height */}
+      <UnlockSection id="unlock" />
+      <ServiceIncludes id="services" />
+      <Carousel id="carousel" />
+      <ServicePromises id="service-promises" />
+      <Reasons id="contact" />
+      <FAQ id="faq" />
+      <Pricing id="pricing" />
+      <Footer id="footer" />
+    </div>
   );
 };
 

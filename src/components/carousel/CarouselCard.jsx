@@ -1,26 +1,26 @@
-import { CarouselPlugin } from "./Carousel";
-import { customerData } from "./const";
-import { CallUsButton } from "@/main/common";
-// Sample data
+import { Button } from "@/components/ui/button"; // ShadCN button
 
-const CarouselCard = () => {
+const CarouseleCard = ({ name, date, feedback, image, rating }) => {
   return (
-    <div className="w-full flex flex-col items-center mb-20">
-      <h2 className="text-center text-6xl font-bold mb-8 mt-8">
-        Top Rated in Melbourne, Over 23,000+ Happy Clients.
-      </h2>
-
-      <div className="w-full">
-        <CarouselPlugin dataCustom={customerData} />
-      </div>
-      <div className="flex flex-col items-center justify-center text-center">
-        <h3 className="text-center text-4xl font-bold mb-8 mt-8">
-          Join the Happy Clients List. Call Now for a Free Estimate
-        </h3>
-        <CallUsButton />
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden p-4">
+      <img src={image} alt={name} className="w-full h-40 object-cover" />
+      <div className="h-[340px] flex flex-col">
+        <div className="flex-grow flex flex-col gap-4">
+          <h3 className="text-xl font-semibold">{name}</h3>
+          <p className="text-sm text-gray-500">
+            {new Date(date).toLocaleDateString()}
+          </p>
+          <p className="mt-2 text-gray-700">{feedback}</p>
+          <div className="flex items-center mt-4">
+            <span className="text-yellow-400">
+              {"★".repeat(rating) + "☆".repeat(5 - rating)}
+            </span>
+          </div>
+        </div>
+        <Button className="mt-4 w-full text-center">Learn More</Button>
       </div>
     </div>
   );
 };
 
-export default CarouselCard;
+export default CarouseleCard;

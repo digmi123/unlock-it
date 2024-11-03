@@ -7,9 +7,9 @@ import {
 } from "@/components/ui/accordion";
 
 import { questionsAnswers } from "./consts";
-function FAQ() {
+function FAQ({id}) {
   return (
-    <SectionWrapper className="bg-primary">
+    <SectionWrapper id={id} className="bg-primary">
       <h1 className="text-4xl uppercase font-bold text-center py-4">locksmith common questions</h1>
 
       <div className="my-4 p-4 flex flex-col bg-white rounded-md">

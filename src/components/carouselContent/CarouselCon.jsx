@@ -1,22 +1,17 @@
-import React from 'react'
+import React from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import {
-  
-  CarouselContent,
-  CarouselItem,
-  
-} from "@/components/ui/carousel";
-import { renderStars } from "./const";
+import { CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { renderStars } from "./utils";
 
-function CarouselCon({dataCustom}) {
+function CarouselCon({ dataCustom }) {
   return (
-    <CarouselContent className=" ">
+    <CarouselContent className="flex space-x-4">
     {" "}
     {/* Adjust space between cards */}
     {dataCustom.map((item) => (
       <CarouselItem
         key={item.id}
-        className="w-full xs-only:w-[100%] sm:w-[50%] md:w-[33.33%] lg:w-[40%] xl:w-[45%] 2xl:w-[30%] 3xl:w-[25%] 4xl:w-[20%] lg-only:w-[45%] p-2"
+        className=" sm:w-[50%] md:w-[33.33%] lg:w-[25%] xl:w-[20%] p-2"
       >
         <div className="p-1">
           <Card className="flex flex-col h-full h-90">
@@ -44,4 +39,4 @@ function CarouselCon({dataCustom}) {
   )
 }
 
-export default CarouselCon
+export default CarouselCon;

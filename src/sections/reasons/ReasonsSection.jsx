@@ -1,10 +1,10 @@
 import ContactLayout from "@/Layouts/ContactLayout";
 import LockedOut from "../../components/locked-out/LockedOut";
 
-function ReasonsSection() {
+function ReasonsSection({id}) {
   return (
     <ContactLayout id="reasons-section">
-      <LockedOut />
+      <LockedOut id={id}/>
     </ContactLayout>
   );
 }

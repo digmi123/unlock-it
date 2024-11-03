@@ -8,8 +8,6 @@ export default {
         lg: { max: "1023px" },
         md: { max: "767px" },
         sm: { max: "639px" },
-        'lg-only': { 'min': '1024px', 'max': '1279px' },
-        'xs-only': { 'min': '375px', 'max': '551px' },
       },
       fontSize: {
         titleClamp: "clamp(3rem, 5vw, 3.75rem)",
