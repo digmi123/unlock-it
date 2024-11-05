@@ -3,8 +3,6 @@ import { forwardRef } from "react";
 import LockTypeSection from "@/sections/lockType/LockTypeSection";
 
 const UnlockSection = forwardRef((props, ref) => {
-  console.log(ref);
-
   return (
     <div ref={ref}>
       <div className="bg-[url('/src/assets/unlocking-door.jpeg')] bg-top bg-cover bg-no-repeat object-cover w-full flex flex-col justify-center items-center">
