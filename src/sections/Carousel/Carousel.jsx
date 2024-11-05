@@ -1,12 +1,12 @@
 import CarouselWrapper from "@/components/carousel/CarouselWrapper";
 import CarouselLayout from "@/Layouts/CarouselLayout";
-
-function Carousel({id}) {
+import { forwardRef } from "react";
+const Carousel = forwardRef((props, ref) => {
   return (
     <CarouselLayout>
-      <CarouselWrapper id={id}/>
+      <CarouselWrapper ref={ref} />
     </CarouselLayout>
   );
-}
+});
 
 export default Carousel;

@@ -1,9 +1,9 @@
 import Promises from "@/components/promisesBanner/Promises";
 import BannerLayout from "@/Layouts/BannerLayout";
-export default function ServicePromises() {
+export default function ServicePromises({ref}) {
   return (
     <BannerLayout>
-      <Promises />
+      <Promises ref={ref}/>
     </BannerLayout>
   );
 }

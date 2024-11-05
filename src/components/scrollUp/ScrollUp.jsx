@@ -1,20 +1,18 @@
 import React from "react";
-import { ChevronUp } from 'lucide-react';
+import { ChevronUp } from "lucide-react";
+import useScrollToTop from "./hook/useScrollTop";
 const ScrollToTopButton = () => {
-  const handleScrollToTop = () => {
-    const navbar = document.getElementById("navbar"); // Ensure your navbar has this id
-    if (navbar) {
-      navbar.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const { isVisible, scrollToTop } = useScrollToTop(300);
 
   return (
-    <button
-      onClick={handleScrollToTop}
-      className="fixed bottom-4 right-4 bg-blue-500 text-white rounded-full p-3 shadow-lg hover:bg-blue-600 transition-all"
-    >
-      <ChevronUp />
-    </button>
+    isVisible && (
+      <button
+        onClick={scrollToTop}
+        className="md:hidden  fixed bottom-4 right-4 bg-blue-500 text-white rounded-full p-3 shadow-lg hover:bg-blue-600 transition-all"
+      >
+        <ChevronUp />
+      </button>
+    )
   );
 };
 

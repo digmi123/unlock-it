@@ -1,10 +1,12 @@
 import BannerLayout from "@/Layouts/BannerLayout";
 import Includes from "@/components/serviceIncludesBanner/Includes";
-
-export default function ServiceIncludes({id}) {
+import { forwardRef } from "react";
+const ServiceIncludes = forwardRef((props, ref) => {
   return (
     <BannerLayout>
-      <Includes id={id}/>
+      <Includes ref={ref} />
     </BannerLayout>
   );
-}
+});
+
+export default ServiceIncludes;

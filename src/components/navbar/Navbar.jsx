@@ -1,18 +1,19 @@
-import React from "react";
+import { useState } from "react";
 import checkmark from "./../../assets/checkmark.svg";
 import { CallUsButton } from "@/main/common";
 import menu from "./../../assets/menu.svg";
 import NavbarItem from "./NavbarItem";
 import { navbarItems } from "./consts";
-const Navbar = ({id}) => {
-  const [isOpen, setIsOpen] = React.useState(false);
+
+const Navbar = ({ refs }) => {
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div id={id} className="bg-white ">
+    <div className="bg-white ">
       <nav className="flex justify-between items-center w-[92%] mx-auto md:h-[100px]">
         <div>
           <img src={checkmark} alt="Checkmark" />
@@ -23,13 +24,13 @@ const Navbar = ({id}) => {
           } w-auto md:w-full items-center px-5`}
         >
           <ul className="flex flex-row md:flex-col items-center justify-center gap-[4vw] md:gap-8 text-xl md:text-lg">
-            {navbarItems.map(({ label, link }, index) => (
-              <NavbarItem key={index} label={label} link={link} />
+            {navbarItems.map(({ label, link }) => (
+              <NavbarItem key={link} label={label} refSection={refs[link]} />
             ))}
           </ul>
         </div>
         <div className="flex items-center gap-6">
-          <CallUsButton className={"py-6 px-6 text-xl"} />
+          <CallUsButton className={"py-6 px-6 text-xl "} isAutoWidth />
           <img
             onClick={toggleMenu}
             src={menu}

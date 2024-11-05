@@ -1,11 +1,9 @@
 import React from "react";
 
-const NavbarItem = ({ label, link }) => {
+const NavbarItem = ({ label, refSection }) => {
   const handleClick = () => {
-    const section = document.getElementById(link);
-    console.log("handel",section)
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+    if (refSection && refSection.current) {
+      refSection.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 

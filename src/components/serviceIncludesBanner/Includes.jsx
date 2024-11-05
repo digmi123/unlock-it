@@ -1,10 +1,11 @@
 import { IncludesIcons } from "@/common/const";
 import serviceData from "../../dataJson/servicesData.json";
 import ServiceIncludesCard from "@/components/BannerCard/ServiceIncludesCard";
+import { forwardRef } from "react";
 
-export default function Includes({id}) {
+const Includes = forwardRef((props, ref) => {
   return (
-    <div id={id} className="bg-primary flex flex-col justify-center items-center p-10 gap-5">
+    <div ref={ref} className="bg-primary flex flex-col justify-center items-center p-10 gap-5">
       <h2 className="text-4xl md:text-3xl	 font-bold text-foreground">Our services include:</h2>
       <div className="flex items-center justify-around gap-6 flex-wrap">
         {serviceData.map((service) => (
@@ -17,4 +18,6 @@ export default function Includes({id}) {
       </div>
     </div>
   );
-}
+});
+
+export default Includes;

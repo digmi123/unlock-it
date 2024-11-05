@@ -61,9 +61,9 @@ function ContactForm() {
       </form>
 
       <div className="flex flex-col items-center gap-2">
-        <div className="flex gap-4 flex-wrap items-center">
+        <div className="flex gap-4 flex-wrap items-center md:justify-center">
           <p className="text-2xl">Or call us at:</p>
-          <CallUsButton />
+          <CallUsButton isAutoWidth />
         </div>
         <p>(23,447 Clients)</p>
       </div>

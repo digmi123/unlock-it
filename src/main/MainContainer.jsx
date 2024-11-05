@@ -1,25 +1,25 @@
+import React from "react";
 import {
   Reasons,
   FAQ,
   Pricing,
   ServiceIncludes,
   ServicePromises,
+  UnlockSection,
+  Footer,
 } from "@/sections";
-import { UnlockSection } from "@/sections";
 import { Carousel } from "@/sections/Carousel";
-import { Footer } from "@/sections/footer";
-
-const MainContainer = () => {
+const MainContainer = ({ refs }) => {
   return (
     <>
-      <UnlockSection id="unlock" />
-      <ServiceIncludes id="services" />
-      <Carousel id="reviews" />
-      <ServicePromises id="service-promises" />
-      <Reasons id="contact" />
-      <FAQ id="faq" />
-      <Pricing id="pricing" />
-      <Footer id="footer" />
+      <UnlockSection ref={refs.unlock} />
+      <ServiceIncludes ref={refs.services} />
+      <Carousel ref={refs.reviews} />
+      <ServicePromises ref={refs.servicePromises} />
+      <Reasons ref={refs.contact} />
+      <FAQ ref={refs.faq} />
+      <Pricing ref={refs.pricing} />
+      <Footer />
     </>
   );
 };

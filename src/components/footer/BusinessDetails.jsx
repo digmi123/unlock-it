@@ -10,11 +10,11 @@ export default function BusinessDetails() {
         <img src={reactLogo} alt="Logo" />
       </div>
       <p className="text-xl font-medium">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
-        debitis consectetur, necessitatibus blanditiis in tenetur.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum debitis consectetur,
+        necessitatibus blanditiis in tenetur.
       </p>
       <Icons />
-      <CallUsButton className="py-6 px-8 text-xl self-center my-5" />
+      <CallUsButton isAutoWidth className="py-6 px-8 text-xl self-center my-5" />
     </div>
   );
 }

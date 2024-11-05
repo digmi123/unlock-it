@@ -2,7 +2,7 @@ import checkmark from "../../assets/checkmark.svg";
 import PropTypes from "prop-types";
 import { CallUsButton } from "@/main/common";
 import { reasons, cardsContent } from "./consts";
-
+import { forwardRef } from "react";
 const Card = ({ topic, description }) => {
   return (
     <div className="bg-primary rounded-2xl p-4 w-full flex flex-col items-center text-center gap-2">
@@ -17,12 +17,10 @@ Card.propTypes = {
   description: PropTypes.string,
 };
 
-export default function LockedOut({id}) {
+const LockedOut = forwardRef((props, ref) => {
   return (
-    <div id={id} className="flex flex-col gap-8">
-      <h1 className="text-titleClamp font-bold p-2">
-        Locked out? We&apos;ve got you
-      </h1>
+    <div ref={ref} className="flex flex-col gap-8">
+      <h1 className="text-titleClamp font-bold p-2">Locked out? We&apos;ve got you</h1>
 
       <ul className="flex flex-col gap-2">
         {reasons.map((reason) => (
@@ -44,4 +42,5 @@ export default function LockedOut({id}) {
       </div>
     </div>
   );
-}
+});
+export default LockedOut;
